@@ -7,14 +7,29 @@
     margin-top: 16px;
     /* border: 1px solid red; */
 }
-  
+
 .banner {
-    color: #000000;
+    color: #ffffff;
     font-size: 90px;
     font-family: sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.562) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    width: 500px;
 }
 
-#container {
+.container {
     background: url('/img/valley.jpg') no-repeat fixed center/cover;
+    max-width: 100%;
+    position: absolute;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background: #000000;
+    opacity: .67;
+    position: absolute;
 }

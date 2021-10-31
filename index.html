@@ -4,26 +4,42 @@
     <title>Guess The Number</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <script src="script.js"></script>
 </head>
-<body id="container" class="text-center">
-    <nav class="navbar navbar-dark bg-dark">
-        <!-- Navbar content -->
-        <a class="navbar-brand" href="#">Guess The Number</a>
-    </nav>
-    <main>
-        <h1 class="banner p-3">1.2.3.</h1>
-        <div class="form-group ">
-            <input id="number-guess" class="form-control form-control-lg" type="number" placeholder="What's your guess?">
+<body class="text-center">
+    <div class="container">
+        
+        <main style="z-index: 1;">
+            <h1 class="banner p-3">1.2.3.</h1>
+            <h2 class="description p-2"></h2>
+            <div class="form-group ">
+                <input id="number-guess" class="form-control form-control-lg" type="number" placeholder="What's your guess?" min="0">
+            </div>
+            <div id="result">
+                <!-- result -->
+            </div>
+            <button type="button" id="number-submit" class="btn btn-lg btn-secondary">Check Me</button>
+            <button type="button" id="restart-game" class="btn btn-lg btn-light">Restart</button>
+            <div id="history">
+                <!-- guess history -->
+            </div>
+            
+        </main>
+
+        <div class="overlay"></div>
+        <div class="music-player" style="display: none;">
+            <audio controls autoplay id="settings">
+                <!-- <source src="audio/On My Way.mp3"> -->
+                <source src="./audio/Michael Jackson - Thriller (James Egbert Remix).mp3#t=00:50"
+                oncanplaythrough="this.play();">
+            </audio>
+
+            <script>
+                var audio = document.getElementById("settings");
+                audio.volume = 0.4;
+            </script>
+                
         </div>
-        <div id="result">
-            <!-- result -->
-        </div>
-        <button type="button" id="number-submit" class="btn btn-lg btn-secondary">Check Me</button>
-        <button type="button" id="restart-game" class="btn btn-lg btn-light">Restart</button>
-        <div id="history">
-            <!-- guess history -->
-        </div>
-    </main>
+
+    </div>
 </body>
 </html>
