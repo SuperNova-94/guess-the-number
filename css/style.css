@@ -1,0 +1,20 @@
+#number-guess, #result, #history {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#history {
+    margin-top: 16px;
+    /* border: 1px solid red; */
+}
+  
+.banner {
+    color: #000000;
+    font-size: 90px;
+    font-family: sans-serif;
+}
+
+#container {
+    background: url('/img/valley.jpg') no-repeat fixed center/cover;
+    height: 100%;
+}
