@@ -59,7 +59,6 @@ function displayResult(numberGuess) {
     showYouWon(); 
     document.getElementById('number-guess').value = "";
     document.getElementById('number-guess').placeholder="Hurray!!!"; 
-    makeItRain();
   }
 }
 
@@ -78,7 +77,6 @@ function initGame(){
   guesses = [];
   displayHistory();
   console.log('The correct number is:\n' + correctNumber);
-  $( ".confetti" ).remove();
 }
 
 /**
